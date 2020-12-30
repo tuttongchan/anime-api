@@ -1,10 +1,19 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  background: rgb(51, 63, 58)
 }
 
 #search-form {
   margin-top: 2rem;
+}
+
+input::placeholder {
+    color: hotpink;
+}
+
+input:focus{
+    color: #fff;
 }
 
 .kemicofa-row {
@@ -19,7 +28,6 @@ body {
 .kemicofa-row > * {
   flex-basis: 20rem;
   flex-shrink: 0;
-  background-color: grey;
 }
 
 .kemicofa-row .card {
@@ -35,4 +43,5 @@ body {
   flex-basis: 25rem;
   flex-shrink: 0;
   overflow-y: hidden;
+  background-color: grey;
 }
