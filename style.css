@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#search-form {
+  margin-top: 2rem;
+}
+
+.kemicofa-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: stretch;
+}
+
+/* "> *" - every element within */
+.kemicofa-row > * {
+  flex-basis: 20rem;
+  flex-shrink: 0;
+  background-color: grey;
+}
+
+.kemicofa-row .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.kemicofa-row .card > .card-content {
+  flex-grow: 1;
+}
+
+.kemicofa-row .card > .card-image {
+  flex-basis: 25rem;
+  flex-shrink: 0;
+  overflow-y: hidden;
+}
